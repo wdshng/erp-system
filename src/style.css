@@ -1,0 +1,75 @@
+/* ===== ERP 系统全局样式 ===== */
+
+/* CSS 变量定义 - 主题配色 */
+:root {
+  --accent: #4f46e5;
+  --accent-light: #818cf8;
+  --accent2: #0ea5e9;
+  --accent3: #10b981;
+  --accent4: #f59e0b;
+  --accent5: #ef4444;
+  --bg: #f0f2f5;
+  --bg2: #ffffff;
+  --ink: #1a1a2e;
+  --muted: #6b7280;
+  --rule: #e2e8f0;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.04);
+}
+
+/* 全局重置 */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'InstrumentSans', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 链接重置 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 表单元素统一 */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rule);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* #app 根容器 */
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
